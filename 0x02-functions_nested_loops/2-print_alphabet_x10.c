@@ -3,7 +3,7 @@
 /**
  * main - print_alphabet_x10 - Make alphabet x10
  *
- * Return: void
+ * Return: Always 0
  */
 
 void print_alphabet_x10(void)
@@ -15,7 +15,7 @@ void print_alphabet_x10(void)
 	{
 	for (c = 'a'; c <= 'z'; c++)
 	{
-	-putchar(c);
+	_putchar(c);
 	}
 	_putchar('\n');
 	i++;
