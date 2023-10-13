@@ -2,9 +2,9 @@
 
 /**
  * mul - multiplies two integers
- * @a: function parameter 1
- * @b: function parameter 2
- * Return: returns void
+ * @a: int 1
+ * @b: int 2
+ * Return: addition of the multiplication
  */
 
 int mul(int a, int b);
