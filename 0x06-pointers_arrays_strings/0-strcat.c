@@ -9,7 +9,6 @@
 *
 * Return: dest
 */
-
 char *_strcat(char *dest, char *src)
 {
 int k, r;
