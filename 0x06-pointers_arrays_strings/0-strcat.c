@@ -6,6 +6,7 @@
 * @src: source of second string
 * Return: dest
 */
+
 char *_strcat(char *dest, char *src)
 {
 	int len, i;
