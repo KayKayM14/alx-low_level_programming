@@ -1,19 +1,27 @@
 #include "main.h"
 
 /**
-* _strcar - concanate two strings
+* _strcat - concanate two strings
 * @dest: destination of string
 * @src: source of second string
-* Return: dest
+* Return: a pointer to the destination string (dest)
 */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src);
 {
-	int len, i;
+	int dest i, int src c;
+	int i = 0;
+	int c = 0;
 
-	for (len = 0; dest[len] != '\0'; len++)
-		;
-	for (len = 0; src[i] != '\0'; i++)
-		dest[len++] = '\0';
+	while (dest[i] != '\0')
+	{
+		c++;
+	}
+	while (src[c] != '\0')
+	{
+		i++;
+		c++;
+	}
+	dest[i] = '\0';
 	return (dest);
 }
