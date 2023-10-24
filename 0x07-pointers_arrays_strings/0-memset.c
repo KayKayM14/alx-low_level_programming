@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * _memset() function fill the memory with a constant byte
 * @s: memory destination
 * @b: char to be copied
