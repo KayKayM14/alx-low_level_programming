@@ -9,7 +9,7 @@
  *
  * Return: The two strings concatenated.
  */
-char *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2);
 {
 	int i = 0, j = 0, k = 0, l = 0;
 	char *s;
