@@ -39,5 +39,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			strcpy(concatenated, s1);
 
 			strncat(concatenated, s2, n);
-			return (concatenated);
+ 			return (concatenated);
 }
