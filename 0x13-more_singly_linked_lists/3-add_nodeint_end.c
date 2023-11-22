@@ -33,6 +33,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		listint_t *last_node = *head;
 
 		while (last_node->next != NULL)
+			last_node = last_node->next; /*update last_node to point to the next node*/
 
 		/*set the next pointer of the last node to the new node */
 		last_node->next = new_node;
