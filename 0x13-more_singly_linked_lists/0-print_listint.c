@@ -3,9 +3,9 @@
 
 /**
  * print_listint- Iterates through a list of integers and prints each element.
- * @h: A pointer to the head of the list.
+ * @h: the head pointer of the list
  *
- * Returns: Returns the total number of nodes in the list.
+ * Return: the total number of nodes in the list.
  */
 size_t print_listint(const listint_t *h)
 {
