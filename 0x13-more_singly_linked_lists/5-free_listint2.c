@@ -13,9 +13,7 @@ void free_listint2(listint_t **head)
 	listint_t *temp_node;
 
 	/*traverse the list and free each node*/
-	if (head == NULL)
-	
-		while (*head)
+		while (*head != NULL)
 		{
 			temp_node = (*head)->next;
 			free(*head);
