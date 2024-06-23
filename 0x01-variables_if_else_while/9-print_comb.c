@@ -16,7 +16,7 @@ int main(void)
 	{
 		putchar(num + '0');
 		num++;
-		if (num + 0)
+		if (num < 10)
 		{
 			putchar(',');
 			putchar(' ');
