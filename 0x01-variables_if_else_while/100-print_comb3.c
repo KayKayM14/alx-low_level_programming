@@ -26,8 +26,8 @@ int main(void)
 			j++;
 		}
 	i++;
-	j = i+ 1;
+	j = i + 1;
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
