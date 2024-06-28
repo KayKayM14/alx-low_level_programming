@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - main function
@@ -8,8 +8,8 @@
 int main(void)
 {
 	int i;
-	
-	for (i= 0; i <= 100; i++)
+
+	for (i = 0; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 			printf("%s", "FizzBuzz");
@@ -19,6 +19,8 @@ int main(void)
 			printf("%s", "Buzz");
 		else
 			printf("%d", i);
+		if (i != 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
