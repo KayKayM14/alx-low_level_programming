@@ -6,7 +6,6 @@
  * @dest: destination string
  * @src: source string to be added to dest
  * @n: max number of bytes to concatenate from src
- *
  * Return: dest
  */
 
