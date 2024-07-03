@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates (combines) two strings
- *@dest: destination string
- *@src: source string to be appended (added)
- *Return: Pointer to the resulting string
+ * _strcat - concatenate two stings (combine)
+ * @dest: destination string
+ * @src: the source string to be added to dest
+ *
+ * Return: pointer to the resulting string dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -13,8 +14,10 @@ char *_strcat(char *dest, char *src)
 
 /*find the end of dest*/
 	for (d = 0; dest[d] != '\0'; d++)
-
-		/*copy the src to the end of dest*/
+	{
+		/*move to the end of string*/
+	}
+/*copy the src to the end of dest*/
 		for (k = 0; src[k] != '\0'; k++, d++)
 		{
 			dest[d] = src[k];
