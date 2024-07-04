@@ -1,0 +1,9 @@
+Here's a possible explanation based on your output:
+
+s1 = "Hello" and s2 = "World!":
+_strcmp(s1, s2) returns -15. This could mean that the first differing character between "Hello" and "World!" is H (72) and W (87).
+The difference 72 - 87 equals -15.
+_strcmp(s2, s1) returns 15. This means the first differing character between "World!" and "Hello" is W (87) and H (72).
+The difference 87 - 72 equals 15.
+
+_strcmp(s1, s1) returns 0, indicating that both strings "Hello" are identical.
