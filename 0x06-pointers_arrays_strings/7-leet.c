@@ -10,6 +10,7 @@
 char *leet(char *s)
 {
 	int i, k; /* declare counter loop variables*/
+
 	char *a = "aAeEoOtTlL"; /*chars to be replaced*/
 	char *b = "4433007711"; /*chars to replace with*/
 
@@ -23,7 +24,6 @@ char *leet(char *s)
 			{
 				s[i] = b[k];
 /*Replace the character in s with the corresponding character in b*/
-				break;
 			}
 		}
 	}
