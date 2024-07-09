@@ -12,21 +12,17 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *match = NULL;
+	char *a;
 
-	while (*s != '\0')
+	for (; *s != '\0'; s++)
 	{
-		char *a = accept;
-
-		while (*a != '\0')
+		for (a = accept; *a != '\0'; a++)
 		{
 			if (*s == *a)
 			{
-				match = s;
-				return (match);
+				return (s);
 			}
 		}
-		a++;
 	}
-	return (match); /*return NULL if no match found*/
+	return (NULL);
 }
