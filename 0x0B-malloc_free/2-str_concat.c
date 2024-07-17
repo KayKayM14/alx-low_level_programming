@@ -20,6 +20,7 @@ char *str_concat(char *s1, char *s2)
 	/*Treat NULL input strings as empty strings*/
 	if (s1 == NULL)
 	s1 = "";
+	if (s2 == NULL)
 	s2 = "";
 
 	/*Calculate the lengths of the input strings*/
