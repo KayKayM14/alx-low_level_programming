@@ -32,7 +32,7 @@ void print_grid(int **grid, int width, int height)
 /**
  * main - check the code for ALX School students.
  *
- * Return: 0
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -50,3 +50,4 @@ int main(void)
     print_grid(grid, 6, 4);
     free_grid(grid, 4);
     return (0);
+}
