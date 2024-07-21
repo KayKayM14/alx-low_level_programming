@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (j = i + 1; j <= 8; j++)
 		{
-			for (k = k + 1; k <= 9; k++)
+			for (k = j + 1; k <= 9; k++)
 			{
 				/*Print the first digit*/
 				putchar(i + '0');
