@@ -12,7 +12,7 @@ int main(void)
 	/*Print all possible combinations of three different digits*/
 	int i, j, k;
 
-	for (i= 0; i <= 7; i++) /*First digit (0 to 7)*/
+	for (i = 0; i <= 7; i++) /*First digit (0 to 7)*/
 	{
 		for (j = i + 1; j <= 8; j++)
 		{
