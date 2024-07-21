@@ -13,7 +13,7 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *new_ptr;
-	unsigned int min_size, i;
+	unsigned int min_size;
 
 	/*Handle special cases*/
 	if (new_size == 0)
@@ -40,10 +40,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	/*Copy data from old memory block to new memory block*/
 	min_size = old_size < new_size ? old_size : new_size;
-	for (i = 0; i < min_size; i++)
-	{
-	((char *)new_ptr)[i] = ((char *)ptr)[i];
-	}
+	memcpy(new_ptr, ptr, min_size);
 
 	/*free old mem block*/
 	free(ptr);
