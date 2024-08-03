@@ -1,0 +1,19 @@
+Explanation
+Include Header: Include the lists.h header file which contains the definition of list_t.
+
+Function Definition: Define the function add_node.
+
+Allocate Memory: Allocate memory for the new node.
+
+Error Check: If memory allocation fails, return NULL.
+
+Duplicate String: Duplicate the input string using strdup.
+
+Error Check: If string duplication fails, free the allocated memory for the new node and return NULL.
+
+Set String Length: Set the length of the string.
+
+Update Pointers: Point the new node to the current head of the list, and update the head to the new node.
+
+Return New Node: Return the address of the new element.
+
