@@ -1,0 +1,9 @@
+1. List length
+Explanation
+Include Header: Include the lists.h header file which contains the definition of list_t.
+
+Function Definition: Define the function list_len.
+
+Count Elements: Initialize a counter variable count to 0. Traverse the list using a while loop, incrementing count for each node.
+
+Return Count: Return the total count of nodes in the list.
