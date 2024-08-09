@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * binar_to_unit - converts a binary number to an unsigned int.(pos num)
+ * binary_to_unit - converts a binary number to an unsigned int.(pos num)
  * @b: pointer to a string of 0 and 1 chars.
  *
  * Return: the converted number, or 0 if there's an invalid character
