@@ -15,7 +15,7 @@ int pop_listint(listint_t **head)
 	int n;
 
 	/* Check if the list is empty */
-	if (*hhead == NULL)
+	if (*head == NULL)
 		return (0);
 
 	/* Store the data of the head node */
