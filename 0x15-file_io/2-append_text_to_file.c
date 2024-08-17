@@ -11,25 +11,25 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int o, w, len = 0;
-
+	int file, write_res, len = 0;
+/* Check if the filename is NULL */
 	if (filename == NULL)
 		return (-1);
-
+/* Calculate the length of text_content if it's not NULL */
 	if (text_content != NULL)
 	{
-		for (len = 0; text_content[len];)
+		while (text_content[len] != '\0')
 			len++;
 	}
-
-	o = open(filename, O_WRONLY | O_APPEND);
-	w = write(o, text_content, len);
-
-	if (o == -1 || w == -1)
+/* Open the file with write and append flags */
+	file = open(filename, O_WRONLY | O_APPEND);
+/* Write the text_content to the file */
+	write_res = write(file, text_content, len);
+/* Check if opening or writing to the file failed */
+	if (file == -1 || write_res == -1)
 		return (-1);
-
-	close(o);
+/* Close the file descriptor */
+	close(file);
 
 	return (1);
 }
-
